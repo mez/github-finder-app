@@ -23,7 +23,7 @@ function User() {
     dispatch({type: 'SET_LOADING'})
     getUserData()
 
-  }, [])
+  }, [dispatch, params.login])
   
   const {
     name,
@@ -33,7 +33,6 @@ function User() {
     bio,
     blog,
     twitter_username,
-    login,
     html_url,
     followers,
     following,
